@@ -1,0 +1,47 @@
+<wicket:extend>
+    <div class="card" >
+        <div class="card-body">
+      <table class="table table-hover" wicket:id="merci">
+        
+      </table>
+        </div>
+    </div>
+    
+    
+    
+      <div class="card" style="margin: 25px">
+          <div class="card-body">
+      <form wicket:id="insmodmerce">
+        <fieldset>
+            <div class="form-group row">
+          <label for="codice"  class="col-2 col-form-label" >
+            Codice: 
+             <div class="col-10">
+
+              <input class="form-control" type="text" wicket:id="codice" 
+                         id="codice">
+             </div>
+          </label>
+                </div>
+              <div class="form-group row">
+          <label for="descrizione"  class="col-2 col-form-label">
+            Descrizione: 
+              <input class="form-control" type="text" wicket:id="descrizione" 
+                         id="descrizione">
+          </label>
+              </div>
+             <div class="form-group row">
+          <label for="peso"  class="col-2 col-form-label">
+            Peso: 
+              <input class="form-control" type="number" wicket:id="peso" 
+                         id="peso">
+          </label>
+             </div>
+            
+                      <input class="btn btn-success ml-3" type="submit" value="Invia">
+        </fieldset>
+      </form>
+          </div>
+      </div>
+  <div wicket:id="feedback"></div>
+</wicket:extend>
